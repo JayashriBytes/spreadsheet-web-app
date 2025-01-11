@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadsheet Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Spreadsheet Web App</h1>
+    </div>
+
+    <div class="toolbar">
+        <button onclick="applyFunction('sum')">SUM</button>
+        <button onclick="applyFunction('average')">AVERAGE</button>
+        <button onclick="applyFunction('max')">MAX</button>
+        <button onclick="applyFunction('min')">MIN</button>
+        <button onclick="applyFunction('count')">COUNT</button>
+        <button onclick="applyFunction('trim')">TRIM</button>
+        <button onclick="applyFunction('upper')">UPPER</button>
+        <button onclick="applyFunction('lower')">LOWER</button>
+        <button onclick="applyFunction('removeDuplicates')">REMOVE DUPLICATES</button>
+    </div>
+
+    <div class="actions">
+        <button onclick="addRow()">Add Row</button>
+        <button onclick="deleteRow()">Delete Row</button>
+        <button onclick="addColumn()">Add Column</button>
+        <button onclick="deleteColumn()">Delete Column</button>
+    </div>
+
+    <table id="spreadsheet">
+        <!-- Dynamic content will be generated here -->
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
